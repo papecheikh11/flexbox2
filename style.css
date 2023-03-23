@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(184, 183, 182);
+}
+header
+{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    
+    background-color: rgb(238, 162, 47);
+    height: 90px;
+    color: #fff;
+}
+.moi{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(238, 162, 47);
+    height: 90px;
+    color: #fff;
+}
+.conteneur{
+    height: 500px;
+    display: flex;
+    gap: 5px;
+}
+.item{
+    margin-top: 5px;
+    flex-grow: 1;
+    flex-basis: 150px;
+    background-color: rgb(245, 242, 238);
+    color: #964006;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    border: #131312 solid 2px;
+}
+
+.photos{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(102, 101, 99);
+    margin-top: -400px;
+    /* height: 550px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.image{
+    margin-top: 10px;
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: rgb(245, 242, 238);
+    color: #000000;
+    height: 500px;
+    font-size: 1.2em;
+    text-align: center;
+    border: #131312 solid 2px;
+}
+.image img{
+    margin-top: 10px;
+    width: 95%;
+    height: 300px;
+}
+.image p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+button{
+    width: 90%;
+    height: 40px;
+    background-color: #a0a09a;
+}
+
+@media screen and (max-width: 1200px) {
+    .photos{
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(102, 101, 99);
+        margin-top: -10px;
+        /* height: 550px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    footer{
+        margin-top: -430px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(238, 162, 47);
+        height: 90px;
+        color: #fff;
+    }
+    .moi{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteneur{
+        font-size: 0.8em;
+        order: 2;
+    }
+}
